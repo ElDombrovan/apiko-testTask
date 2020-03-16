@@ -1,13 +1,10 @@
-@font-face {
-  font-family: 'Roboto';
-  src: url(../fonts/Roboto-Regular.ttf)
-}
+
 
 @import 'variables';
 
 html {
   font-size: $root-font-size;
-  font-family: $font-family;
+  font-family: sans-serif;
   max-width: $page-width;
   margin: 0 auto;
   text-align: center;
@@ -16,3 +13,57 @@ html {
 p {
   font-size: $paragraph-font-size;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  margin: 0;
+}
+
+header {
+  height: 10vh;
+}
+
+.container {
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.movie {
+  margin-top: 50px;
+}
+
+ul {
+  list-style: none;
+}
+
+
+.content {
+  display: none;
+  position: relative;
+  min-height: 200px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  padding: 20px;
+}
+
+article {
+  a { 
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+#trends, #similar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
